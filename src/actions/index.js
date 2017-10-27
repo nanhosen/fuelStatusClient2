@@ -14,7 +14,7 @@ import {
 
 
 // const ROOT_URL = 'http://localhost:3090'
-const ROOT_URL = 'https://gbccblm.us'
+const ROOT_URL = 'https://gbccblm.us/server'
 
 // export function signinUser({ email, password }) {
 // export function signinUser(props) {
