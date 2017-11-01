@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 
 import Zone from './Zone'
 
+import Auth from './auth0/Auth.js'
+
+
 class ZoneGroup extends Component {
 	constructor(props) {
 		super(props)
@@ -99,5 +102,8 @@ class ZoneGroup extends Component {
 		// )
 	}
 }
+
+const auth = new Auth()
+auth.login ();
 
 export default ZoneGroup

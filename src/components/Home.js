@@ -7,6 +7,7 @@ import Map from './ol/Map'
 import ZoneLayer from './ol/layers/ZoneLayer'
 import './Home.css'
 
+
 class Home extends Component {
   state = { height: null }
 
@@ -48,6 +49,8 @@ class Home extends Component {
 		)
 	}
 }
+
+
 
 
 const mapStateToProps = reduxState => {

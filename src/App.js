@@ -16,14 +16,24 @@ import ZoneGroup from './components/ZoneGroup'
 // import MapContainer from './components/MapContainer'
 
 const routes = [
-	// { path: '/signin',
-	// 	component: RequireUnauth(Signin),
+
+	// { path: '/signup',
+	// 	component: RequireUnauth(Signup),
 	// 	exact: true
 	// },
-	// { path: '/signout',
-	// 	component: Signout,
+	// { path: '/feature',
+	// 	component: RequireAuth(Feature),
 	// 	exact: true
 	// },
+	// {	path: '/zonegroup',
+	// 	component: RequireAuth(ZoneGroup),
+	// 	exact: true
+	// },
+
+	// { 
+	// 	component: Home
+	// }
+
 	{ path: '/signup',
 		component: RequireUnauth(Signup),
 		exact: true
@@ -36,13 +46,11 @@ const routes = [
 		component: RequireAuth(ZoneGroup),
 		exact: true
 	},
-	// { path: '/map',
-	// 	component: MapContainer,
-	// 	exact: true
-	// },
+
 	{ 
 		component: Home
-	},
+	}
+
 ]
 
 const RouteWithSubRoutes = route => (

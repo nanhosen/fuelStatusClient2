@@ -1,3 +1,6 @@
+
+////this is the original Header.js before adding the additional Auth stuff
+
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link, Route } from 'react-router-dom'
@@ -7,7 +10,10 @@ import RequireUnauth from './auth/RequireUnauth'
 import Signin from './auth/Signin'
 import Signout from './auth/Signout'
 
+
+
 class Header extends Component {
+	
   componentDidMount() {
     this.props.fetchZoneData()
     this.props.fetchStatus()
@@ -84,6 +90,7 @@ class Header extends Component {
 		)
   }
 }
+
 
 const mapStateToProps = reduxState => {
 	const { authenticated } = reduxState.auth
