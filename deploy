@@ -1,0 +1,5 @@
+#!/bin/sh
+#testing again
+ssh useradmin@138.68.27.50 <<EOF
+	exit 
+EOF
